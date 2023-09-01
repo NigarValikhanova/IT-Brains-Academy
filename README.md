@@ -190,14 +190,7 @@ Example of a foreach loop:
 
 ![loop4](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/9e505772-052e-4394-a403-9992227103fd)
 
-Use the for loop when:
+<table> <tr> <th> Use the for loop when </th> <th> Use the foreach loop when </th> </tr> <tr> <td> You need to iterate a specific number of times. </td> <td> You want to iterate through all elements of a collection without needing to manipulate indices. </td> </tr> <tr> <td> You require fine control over the iteration process, such as skipping or repeating iterations based on complex conditions. </td> <td> You want cleaner and more readable code for simple iterations. </td> </tr> <tr> <td> You need to iterate through arrays, lists, or collections using an index. </td> <td> You're working with collections that implement the IEnumerable or IEnumerable<T> interface. </td> </tr> </table>
 
-You need to iterate a specific number of times.
-You require fine control over the iteration process, such as skipping or repeating iterations based on complex conditions.
-You need to iterate through arrays, lists, or collections using an index.
 
-Use the foreach loop when:
 
-You want to iterate through all elements of a collection without needing to manipulate indices.
-You want cleaner and more readable code for simple iterations.
-You're working with collections that implement the IEnumerable or IEnumerable<T> interface.
