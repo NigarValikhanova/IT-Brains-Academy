@@ -185,6 +185,79 @@ Example of a foreach loop:
 
 <table> <tr> <th> Use the for loop when </th> <th> Use the foreach loop when </th> </tr> <tr> <td> You need to iterate a specific number of times. </td> <td> You want to iterate through all elements of a collection without needing to manipulate indices. </td> </tr> <tr> <td> You require fine control over the iteration process, such as skipping or repeating iterations based on complex conditions. </td> <td> You want cleaner and more readable code for simple iterations. </td> </tr> <tr> <td> You need to iterate through arrays, lists, or collections using an index. </td> <td> You're working with collections that implement the IEnumerable or IEnumerable<T> interface. </td> </tr> </table>
 
+<h3> OPERATORS </h3>
+
+In C#, operators are symbols or keywords that perform various operations on variables and values. Operators allow you to manipulate data, perform calculations, compare values, and more within your C# code. Here's an overview of some common categories of operators in C#:
+
+1. Arithmetic Operators:
+<table>
+ <tr> <th> Operator </th> <th> Description </th> <th> Explain</th></tr>
+ <tr> <td> + </td> <td> Addition </td> <td> Adds two numeric values together </td></tr>
+ <tr> <td> - </td> <td> Subtraction </td> <td> Subtracts the right operand from the left operand. </td> </tr>
+ <tr> <td> * </td> <td> Multiplication </td> <td> Multiplies two numeric values. </td> </tr>
+ <tr> <td> / </td> <td> Division </td> <td> Divides the left operand by the right operand. </td> </tr>
+ <tr> <td> % </td> <td> Modulus </td> <td> Returns the remainder of the division of the left operand by the right operand. </td> </tr>
+</table>
+
+2. Assignment Operators:
+<table> <tr> <th> Operator </th> <th> Description </th> <th> Explain </th></tr>
+<tr> <td> = </td> <td> Assignment </td> <td> Assigns a value to a variable. </td> </tr>
+<tr> <td> += </td> <td> Addition Assignment </td> <td> Adds the right operand to the left operand and assigns the result to the left operand. </td> </tr>
+<tr> <td> -= </td> <td> Subtraction Assignment </td> <td> Subtracts the right operand from the left operand and assigns the result to the left operand. </td> </tr>
+<tr> <td> *= </td> <td> Multiplication Assignment </td> <td> Multiplies the left operand by the right operand and assigns the result to the left operand. </td> </tr>
+<tr> <td> /= </td> <td> Division Assignment </td> <td> Divides the left operand by the right operand and assigns the result to the left operand. </td> </tr>
+<tr> <td> %= </td> <td> Modulus Assignment </td> <td> Performs a modulus operation on the left operand and assigns the result to the left operand. </td> </tr>
+</table>
+
+3. Comparison or Relational Operators:
+<table> <tr> <th> Operator </th> <th> Description </th> <th> Explain </th></tr>
+<tr> <td> == </td> <td> Equal to </td> <td> Checks if two values are equal. </td> </tr> 
+<tr> <td> != </td> <td> Not equal to </td> <td> Checks if two values are not equal. </td> </tr>
+<tr> <td> < </td> <td> Less than </td> <td> Checks if the left operand is less than the right operand. </td> </tr>
+<tr> <td> > </td> <td> Greater than </td> <td> Checks if the left operand is greater than the right operand. </td> </tr>
+<tr> <td> <= </td> <td> Less than or equal to </td> <td> Checks if the left operand is less than or equal to the right operand. </td> </tr>
+<tr> <td> >= </td> <td> Greater than or equal to </td> <td> Checks if the left operand is greater than or equal to the right operand. </td> </tr> 
+</table>
+
+4. Logical Operators:
+<table> <tr> <th> Operator </th> <th> Description </th> <th> Explain </th></tr>
+<tr> <td> && </td> <td> Logical AND </td> <td> Performs a logical AND operation on boolean values. </td> </tr> 
+<tr> <td> || </td> <td> Logical OR </td> <td> Performs a logical OR operation on boolean values. </td> </tr>  
+<tr> <td> ! </td> <td> Logical NOT </td> <td> Negates a boolean value. </td> </tr> 
+ </table>
+
+5. Bitwise Operators:
+<table> <tr> <th> Operator </th> <th> Description </th> <th> Explain </th></tr>
+<tr> <td> & </td> <td> Bitwise AND </td> <td> Performs a bitwise AND operation. </td> </tr> 
+<tr> <td> | </td> <td> Bitwise OR </td> <td> Performs a bitwise OR operation. </td> </tr>  
+<tr> <td> ^ </td> <td> Bitwise XOR </td> <td> Performs a bitwise XOR (exclusive OR) operation. </td> </tr> 
+<tr> <td> ~ </td> <td> Bitwise NOT </td> <td> Inverts the bits of a value. </td> </tr>
+<tr> <td> << </td> <td> Left Shift </td> <td> Shifts bits to the left. </td> </tr>
+<tr> <td> >> </td> <td> Right Shift </td> <td> Shifts bits to the right. </td> </tr>
+ </table>
+ 
+6. Conditional Operator:
+<table> <tr> <th> Operator </th> <th> Description </th> <th> Explain </th></tr>
+<tr> <td> ? : </td> <td> Conditional Operator or Ternary Operator </td> <td> Provides a concise way to return one of two values based on a condition. </td> </tr>
+</table>
+7. Increment and Decrement Operators:
+<table> <tr> <th> Operator </th> <th> Description </th> <th> Explain </th></tr>
+<tr> <td> ++ </td> <td> Increment </td> <td> Increases the value of a variable by 1. </td> </tr>
+<tr> <td> -- </td> <td> Decrement </td> <td> Decreases the value of a variable by 1. </td> </tr>
+</table>
+
+8. Type Cast Operators:
+<table> <tr> <th> Operator </th> <th> Description </th> <th> Explain </th></tr>
+<tr> <td> type </td> <td> Explicit Type Cast </td> <td> Converts a value to a specific data type. </td> </tr>
+</table>
+
+9. Other Operators:
+
+<table> <tr> <th> Operator </th> <th> Description </th> </tr>
+<tr> <td> sizeof </td> <td> Returns the size, in bytes, of a data type. </td> </tr>
+<tr> <td> typeof </td> <td> Returns the Type object for a given type. </td> </tr>
+<tr> <td> is </td> <td> Checks if an object is of a specific type. </td> </tr>
+</table>
 
 <h4>Enum </h4>
 
