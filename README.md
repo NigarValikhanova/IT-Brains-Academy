@@ -284,3 +284,26 @@ Enums can also have explicitly assigned values:
 In this case, you can assign specific integer values to the enum members, and these values don't need to be sequential or unique.
 
 Enums are a powerful tool for improving code readability and reducing errors when working with predefined sets of related values, like days of the week, status codes, or menu options.
+
+<h3> IS vs AS </h3>
+
+In C#, both is and as are used for type checking and type casting, but they serve different purposes and have different behaviors:
+
+is Operator:
+
+The is operator is primarily used for type checking. It allows you to determine whether an object is an instance of a specific type or a type derived from it.
+It returns a boolean value (true or false) based on whether the object can be cast to the specified type without throwing an exception.
+Here's an example of how is is used:
+
+![16 01](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/99e1cb13-bed7-4930-a489-d912b25826ae)
+
+as Operator:
+
+The as operator is used for explicit type casting (conversion) of reference types. If the cast is not possible, it returns null instead of throwing an exception.
+It's primarily used when you want to convert an object to a specific type, and if the conversion isn't possible, you can gracefully handle the null result.
+Here's an example of how as is used:
+
+![16 02](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/8c1170ac-a192-4f1e-81fd-2f03b7bfe831)
+
+
+To summarize, is is used for type checking and returns a boolean, while as is used for type casting and returns either a reference to the object of the target type or null if the cast is not possible. Choosing between them depends on your specific use case and how you want to handle type-related operations in your code.
