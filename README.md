@@ -519,9 +519,78 @@ Generics provide type safety and better performance, as they work directly with 
 
 In summary, boxing and unboxing are mechanisms for converting between value types and reference types. While they are useful in certain scenarios, they should be used judiciously, as they can impact performance. Whenever possible, consider using generics and value types directly to avoid the overhead of boxing and unboxing.
 
+<h3> Casting </h3>
+
+Casting in C# is the process of converting a value from one data type to another. It allows you to explicitly change the data type of a value, variable, or expression. Casting is often necessary when you want to perform operations or assignments involving different data types. There are two main types of casting in C#: implicit casting (also known as widening or type conversion) and explicit casting (also known as narrowing or type casting).
+
+<h4> Implicit Casting (Widening) </h4>
+
+Implicit casting occurs when a value of a smaller data type is automatically converted to a larger data type without the risk of losing data.
+The conversion is done by the compiler, and you don't need to use any special syntax.
+Implicit casting is always safe because it involves converting to a larger storage type.
+
+![6 05](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/3bf37059-df3b-44b3-98cb-802bd8b166c5)
+
+<h4> Explicit Casting (Narrowing) </h4>
+
+Explicit casting is required when you want to convert a value from a larger data type to a smaller data type, or when you need to specify the casting operation explicitly.
+
+This type of casting may result in data loss or overflow, so it requires you to use the cast operator ((type)) to indicate the intended conversion.
+
+![6 06](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/fe72b0de-9ec9-45c6-a642-5b8008aa7c01)
+
+<h4> Casting Between Related Types </h4>
+
+In some cases, you may need to cast between related data types, such as casting between base and derived classes, or between interfaces and their implementing classes.
+These casts are often performed implicitly or with explicit casting based on the type hierarchy.
+
+![6 07](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/9fe0f12a-7554-44b1-baf8-7cafe77aa910)
+
+<h4> Casting with User-Defined Types </h4>
+
+You can define custom casting operations for your own types by implementing explicit and implicit conversion operators in your classes or structs.
+These custom operators allow you to control how objects of your types are converted to and from other types.
+
+![6 08](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/d1002e13-87bd-4041-ad8a-760b1ebe05a2)
+
+<h4> Checking for Invalid Casts </h4>
+
+When performing explicit casts, you should use exception handling (try-catch) or methods like as and is to check whether the cast is valid before performing it.
+This helps prevent runtime errors due to invalid casts.
+
+![6 09](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/82c471ce-9151-409f-9a1a-ff60dfa44929)
+
+Casting is a powerful feature in C# that allows you to work with different data types in a flexible manner. However, it should be used with caution, especially when performing explicit casts, to avoid unexpected runtime errors and data loss.
+
+<h3> Generic and Non-generic Collection </h3>
+
+C# includes specialized classes that store series of values or objects are called collections.
+
+There are two types of collections available in C#: non-generic collections and generic collections.
+
+The System.Collections namespace contains the non-generic collection types and System.Collections.Generic namespace includes generic collection types.
+
+In most cases, it is recommended to use the generic collections because they perform faster than non-generic collections and also minimize exceptions by giving compile-time errors.
+
+<h4> Generic Collections </h4>
+
+
+C# includes the following generic collection classes in the System.Collections.Generic namespace.
+
+<table> <tr> <th> Generic Collections </th> <th> Description </th> </tr>
+<tr> <td> List (T) </td> <td> Generic List(T) contains elements of specified type. It grows automatically as you add elements in it. </td> </tr> <tr> <td> Dictionary (TKey,TValue) </td> <td> Dictionary (TKey,TValue) contains key-value pairs. </td> </tr> <tr> <td> Queue (T) </td> <td> Queue(T) stores the values in FIFO style (First In First Out). It keeps the order in which the values were added. It provides an Enqueue() method to add values and a Dequeue() method to retrieve values from the collection. </td> </tr> <tr> <td> SortedList(TKey,TValue) </td> <td> SortedList stores key and value pairs. It automatically adds the elements in ascending order of key by default. </td> 
+</tr> <tr> <td> Stack (T) </td> <td> Stack(T) stores the values as LIFO (Last In First Out). It provides a Push() method to add a value and Pop() & Peek() methods to retrieve values. </td> </tr> <tr> <td> Hashset(T) </td> <td> Hashset(T) contains non-duplicate elements. It eliminates duplicate elements. </td> </tr> </table>
+
+<h4> Non-generic Collections </h4>
+<table> <tr> <th> Non-generic Collections </th> <th> Usage </th> </tr> <tr> <td> ArrayList </td> <td> ArrayList stores objects of any type like an array. However, there is no need to specify the size of the ArrayList like with an array as it grows automatically. </td> </tr> <tr> <td> SortedList </td> <td> SortedList stores key and value pairs. It automatically arranges elements in ascending order of key by default. C# includes both, generic and non-generic SortedList collection. </td> </tr> <tr> <td> Stack </td> <td> Stack stores the values in LIFO style (Last In First Out). It provides a Push() method to add a value and Pop() & Peek() methods to retrieve values. C# includes both, generic and non-generic Stack. </td> </tr> <tr> <td> Queue </td> <td> Queue stores the values in FIFO style (First In First Out). It keeps the order in which the values were added. It provides an Enqueue() method to add values and a Dequeue() method to retrieve values from the collection. C# includes generic and non-generic Queue. </td> </tr> <tr> <td> Hashtable </td> <td> Hashtable stores key and value pairs. It retrieves the values by comparing the hash value of the keys. </td> </tr> <tr> <td> BitArray </td> <td> BitArray manages a compact array of bit values, which are represented as Booleans, where true indicates that the bit is on (1) and false indicates the bit is off (0). </td> </tr>
+ 
+</table>
+
+
 <h3> Ref & Out </h3>
 
-In C#, ref and out are two keywords used to pass arguments to methods by reference rather than by value. They are used when you want to modify the value of a variable within a method and have those changes reflected in the calling code. However, there are some differences in how ref and out work:
+In C#, ref and out are two keywords used to pass arguments to methods by reference rather than by value. 
+They are used when you want to modify the value of a variable within a method and have those changes reflected in the calling code. However, there are some differences in how ref and out work:
 
 ref Keyword:
 
@@ -554,6 +623,47 @@ When you use out, the method is not required to assign a value to the parameter 
 When using ref, the variable must have a value assigned before being passed to the method.
 
 In summary, ref and out are useful for passing arguments by reference when you need to modify variables in a method and have those modifications affect the calling code. The choice between them depends on whether you want to use the existing value of the variable or have the method assign a new value to it.
+
+<h3> Undefined and Null </h3>
+
+In C#, "undefined" and "null" are two distinct concepts related to variables and values. It's essential to understand the differences between them:
+
+<h4> Undefined </h4>
+
+An "undefined" variable refers to a variable that has been declared but has not been assigned a value.
+
+In C#, when you declare a variable without initializing it, it's considered "undefined" because it doesn't have a specific value.
+
+Accessing an undefined variable will result in a compilation error.
+
+Example:
+
+![8 01](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/aabb78b9-3539-4fb8-a223-9c7864e292d9)
+
+<h4> Null </h4>
+
+"Null" is a special value that represents the absence of an object or a value.
+
+In C#, reference types (objects) can have the value "null" to indicate that they don't point to any valid object in memory.
+
+Value types (e.g., integers, booleans) cannot have a "null" value because they always contain a value.
+
+To assign a "null" value to a reference type, you can use the null keyword.
+
+Example:
+
+![8 02](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/bd526dc8-5acc-4c78-9e07-6071559701be)
+
+Key Differences:
+
+Undefined variables are variables that have not been given a value at all and will result in compilation errors when accessed.
+Null is a specific value assigned to reference type variables to indicate the absence of an object.
+You can explicitly set a reference type variable to null, but you cannot set a value type variable to null.
+You can use checks like if (variable == null) to test whether a reference type variable is null or not.
+
+![8 03](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/0e239b14-7b60-468c-946e-c5e8067cb9de)
+
+
 
 <h4>Enum </h4>
 
