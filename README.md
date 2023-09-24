@@ -654,15 +654,15 @@ Example:
 
 ![8 02](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/bd526dc8-5acc-4c78-9e07-6071559701be)
 
-Key Differences:
-
-Undefined variables are variables that have not been given a value at all and will result in compilation errors when accessed.
-Null is a specific value assigned to reference type variables to indicate the absence of an object.
-You can explicitly set a reference type variable to null, but you cannot set a value type variable to null.
-You can use checks like if (variable == null) to test whether a reference type variable is null or not.
+<table> <tr> <th> Key Differences </th></tr>
+<tr> <td> Undefined variables are variables that have not been given a value at all and will result in compilation errors when accessed. </td></tr>
+<tr> <td> Null is a specific value assigned to reference type variables to indicate the absence of an object. </td> </tr>
+<tr> <td> You can explicitly set a reference type variable to null, but you cannot set a value type variable to null. </td> </tr>
+<tr> <td> You can use checks like if (variable == null) to test whether a reference type variable is null or not. </td> </tr>
+ 
+</table>
 
 ![8 03](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/0e239b14-7b60-468c-946e-c5e8067cb9de)
-
 
 
 <h4>Enum </h4>
