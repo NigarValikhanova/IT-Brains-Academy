@@ -285,12 +285,16 @@ It is often used when you encounter a condition that should cause you to skip th
 ![4 02](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/7cfaa597-f4e6-48eb-8a47-354f64fd4314)
 
 In this example, the loop skips the iteration when i equals 2, and the output will be 0, 1, 3, and 4.
-
+<table> <tr> <th> Key Points</th></tr>
+<tr> <td> break is used to exit the entire loop, while continue is used to skip the current iteration and move to the next one. </td></tr>
+<tr> <td> Both break and continue can be used with for, while, and do-while loops, as well as within nested loops. </td> </tr>
+ 
+</table>
 Key Points:
 
-break is used to exit the entire loop, while continue is used to skip the current iteration and move to the next one.
 
-Both break and continue can be used with for, while, and do-while loops, as well as within nested loops.
+
+
 
 The use of break and continue should be carefully considered to ensure that the program behaves as intended and to avoid unintended consequences.
 
@@ -758,6 +762,5 @@ Lambda Expressions:
 C# supports lambda expressions, which allow you to create anonymous methods that match a delegate's signature. This is particularly useful for concise, in-place delegate assignments.
 
 ![20 06](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/73f0b102-62bf-4417-acf3-d716ac2de0e7)
-
 
 Delegates are a fundamental part of C# and are used extensively in scenarios such as event handling, callback mechanisms, and implementing flexible and extensible software architectures. They provide a powerful way to encapsulate and pass behavior in a type-safe manner.
