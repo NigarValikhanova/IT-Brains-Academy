@@ -288,19 +288,9 @@ In this example, the loop skips the iteration when i equals 2, and the output wi
 <table> <tr> <th> Key Points</th></tr>
 <tr> <td> break is used to exit the entire loop, while continue is used to skip the current iteration and move to the next one. </td></tr>
 <tr> <td> Both break and continue can be used with for, while, and do-while loops, as well as within nested loops. </td> </tr>
- 
-</table>
-Key Points:
-
-
-
-
-
-The use of break and continue should be carefully considered to ensure that the program behaves as intended and to avoid unintended consequences.
-
-break can also be used in switch statements to exit the switch block prematurely.
-
-These control flow statements are essential for controlling the flow of loops and making your code more flexible and responsive to specific conditions during execution.
+<tr> <td> The use of break and continue should be carefully considered to ensure that the program behaves as intended and to avoid unintended consequences. </td> </tr>
+<tr> <td> break can also be used in switch statements to exit the switch block prematurely. </td> </tr>
+<tr> <td> These control flow statements are essential for controlling the flow of loops and making your code more flexible and responsive to specific conditions during execution. </td> </tr> </table>
 
 <h4>If/Else If/Else Statement </h4>
 
