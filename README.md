@@ -751,9 +751,6 @@ Lambda Expressions:
 
 C# supports lambda expressions, which allow you to create anonymous methods that match a delegate's signature. This is particularly useful for concise, in-place delegate assignments.
 
-
-
-
 ![20 06](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/73f0b102-62bf-4417-acf3-d716ac2de0e7)
 
 Delegates are a fundamental part of C# and are used extensively in scenarios such as event handling, callback mechanisms, and implementing flexible and extensible software architectures. They provide a powerful way to encapsulate and pass behavior in a type-safe manner.
