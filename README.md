@@ -767,6 +767,7 @@ Action is commonly used for defining and passing around methods that perform som
 
 Example of Action usage:
 
+![20 1](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/ce16e253-da8c-4459-b907-98d4897fb342)
 
 
 Func:
@@ -774,8 +775,10 @@ Func:
 Func is a delegate type that represents a method that returns a value of a specified type.
 It can take zero or more input parameters, specified as generic type arguments. The last type argument specifies the return type.
 Func is commonly used for defining and passing around methods that produce a result.
+
 Example of Func usage:
 
+![20 2](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/24465bc6-25ec-4bfb-a694-3a17c578e0af)
 
 
 Both Action and Func can be very handy when working with delegates, event handling, LINQ, and other scenarios where you need to work with methods as data. They provide a way to encapsulate method signatures and use them in a more flexible manner.
