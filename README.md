@@ -754,3 +754,36 @@ C# supports lambda expressions, which allow you to create anonymous methods that
 ![20 06](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/73f0b102-62bf-4417-acf3-d716ac2de0e7)
 
 Delegates are a fundamental part of C# and are used extensively in scenarios such as event handling, callback mechanisms, and implementing flexible and extensible software architectures. They provide a powerful way to encapsulate and pass behavior in a type-safe manner.
+
+<h4> Action and Func </h4>
+
+In C#, both Action and Func are delegate types that allow you to define and work with methods as first-class objects. They are commonly used in scenarios where you need to pass methods as parameters or store them as variables. Here's a brief explanation of each:
+
+Action:
+
+Action is a delegate type that represents a method that does not return a value (i.e., it has a void return type).
+It can take zero or more input parameters, specified as generic type arguments.
+Action is commonly used for defining and passing around methods that perform some action or have side effects but do not produce a result.
+
+Example of Action usage:
+
+
+
+Func:
+
+Func is a delegate type that represents a method that returns a value of a specified type.
+It can take zero or more input parameters, specified as generic type arguments. The last type argument specifies the return type.
+Func is commonly used for defining and passing around methods that produce a result.
+Example of Func usage:
+
+
+
+Both Action and Func can be very handy when working with delegates, event handling, LINQ, and other scenarios where you need to work with methods as data. They provide a way to encapsulate method signatures and use them in a more flexible manner.
+
+Here's a summary of the generic type parameters for Func and Action:
+
+Func<T1, T2, ..., TResult>: Represents a method that takes parameters of types T1, T2, etc., and returns a result of type TResult.
+
+Action<T1, T2, ...>: Represents a method that takes parameters of types T1, T2, etc., and does not return a result (i.e., void).
+
+You can customize the number and types of parameters as needed for your specific use case when defining Func and Action instances.
