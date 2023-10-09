@@ -800,13 +800,19 @@ Here's a basic overview of how threading works in C#:
 Creating Threads:
 You can create threads in C# using the Thread class, which is part of the System.Threading namespace. Here's an example of how to create a new thread:
 
+[21 01](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/e11d2375-a2ba-4024-87c3-101de6b58dc4)
+
 Thread Synchronization:
 When multiple threads access shared resources, you may encounter issues like race conditions. You can use techniques like locks (lock keyword), mutexes, semaphores, and other synchronization primitives to ensure that threads access shared data safely.
 
 Thread Pooling:
 C# also provides a thread pool for efficiently managing and reusing threads for short-lived tasks. You can use the ThreadPool class to queue tasks for execution on available threads from the pool.
 
+![21 02](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/2ec977ec-49fa-4be8-a052-aae9bb391c54)
+
 Async and Await:
 For asynchronous programming, C# provides the async and await keywords, which simplify working with threads and asynchronous operations. They are commonly used in scenarios like I/O-bound or network-bound tasks.
+
+![21 03](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/c2c6b68b-23b7-4e48-95c0-366c50cec416)
 
 It's important to note that working with threads directly can be complex and error-prone. Careful consideration should be given to thread safety, resource management, and avoiding deadlocks when designing multi-threaded applications. Additionally, modern C# features like Task Parallel Library (TPL) and async/await provide higher-level abstractions that simplify many multi-threading scenarios.
