@@ -1,4 +1,4 @@
-<h2> Framework </h2>
+<!-- <h2> Framework </h2>
 In general terms, a framework is a conceptual structure or a set of rules and guidelines that provides a foundation for building something specific. It acts as a support system or scaffolding to help organize, develop, and streamline various aspects of a project or system. Frameworks can be found in various fields and disciplines, such as software development, architecture, education, and more.
 In the context of software development, a framework is a pre-established software environment that provides a structured approach to building applications. It includes a collection of tools, libraries, and components that developers can use to accelerate the development process and adhere to best practices.
 Key characteristics of a software framework include:
@@ -816,3 +816,4 @@ For asynchronous programming, C# provides the async and await keywords, which si
 ![21 03](https://github.com/NigarValikhanova/IT-Brains-Academy/assets/140783772/c2c6b68b-23b7-4e48-95c0-366c50cec416)
 
 It's important to note that working with threads directly can be complex and error-prone. Careful consideration should be given to thread safety, resource management, and avoiding deadlocks when designing multi-threaded applications. Additionally, modern C# features like Task Parallel Library (TPL) and async/await provide higher-level abstractions that simplify many multi-threading scenarios.
+--!>
